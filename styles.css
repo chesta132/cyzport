@@ -19,6 +19,7 @@
 
 a {
   text-decoration: none;
+  outline: transparent;
 }
 
 body {
@@ -101,10 +102,6 @@ ul li a:hover {
   background-color: var(--primary-color);
   color: var(--extra-light);
   border-radius: 10px;
-}
-
-button {
-  outline: transparent;
 }
 
 .section {
