@@ -7,6 +7,7 @@
   --text-dark: #1f2937;
   --text-light: #6b7280;
   --extra-light: #F7F7F7;
+  --more-light: #f9f9f9;
   --max-width: 1200px;
 }
  
@@ -102,6 +103,10 @@ ul li a:hover {
   border-radius: 10px;
 }
 
+button {
+  outline: none;
+}
+
 .section {
   background-color: var(--extra-light);
 }
@@ -194,6 +199,85 @@ ul li a:hover {
   border-radius: 100%;
 }
 
+/* About */
+
+.about {
+  min-height: 100vh;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  background-color: var(--more-light);
+}
+
+.about-img {
+  display: grid;
+  place-items: center;
+}
+
+.about-img img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text p {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.about-text p span, .about-text p strong {
+  color: var(--text-dark);
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  font-weight: 530;
+  line-height: 3rem;
+  color: var(--text-dark);
+}
+
+.about-text h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+}
+
+.action-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-btn button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contact-in-about {
+  color: var(--primary-color-dark);
+  background-color: var(--more-light);
+}
+
+.contact-in-about:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
 @media (width < 750px) {
   nav .checkbox {
     display: block;
@@ -232,4 +316,29 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
+  
+/* About */
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-img {
+    grid-area: 1/1/2/2;
+  }
+
+  .about-text {
+    padding: 0rem 1rem 0rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .action-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }
