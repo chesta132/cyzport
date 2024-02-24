@@ -20,16 +20,16 @@
         </label>
         <input type="checkbox" name="check" id="check" />
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <section class="section">
       <div class="section__container" id="home">
         <div class="content">
-          <p class="subtitle">HELLO</p>
+          <p class="subtitle">Hello Everyone</p>
           <h1 class="title">
             I'm <span>Chesta<br />a</span> Frontend Developer
           </h1>
@@ -40,8 +40,8 @@
             web projects, ranging from personal blogs to e-commerce platforms.
           </p>
           <div class="action__btns">
-            <button class="hire__me">About Me</button>
-            <button class="btn-contact">Contact Me</button>
+            <a href="#about"><button class="hire__me">About Me</button></a>
+            <a href="#contact"><button class="btn-contact">Contact Me</button></a>
           </div>
         </div>
         <div class="image">
@@ -49,5 +49,18 @@
         </div>
       </div>
     </section>
+    <div class="about" id="about">
+      <div class="about-img">
+        <img src="logo.png" alt="image">
+      </div>
+      <div class="about-text">
+        <h1>About <span>Me</span></h1>
+        <h4>Front<span>End</span></h4><br>
+        <p>I am <strong>Chesta Ardiona</strong>.<br>I was born on 4/10/08 so<br>I was 15th years old right now.<br>I live in Indonesia, West Java.<br><br>My goal is to become a Frontend Web Development.<br>I can already master;<br><span>Python (not very well), HTML, CSS</span></p>
+        <div class="action-btn">
+          <a href="#contact"><button class="contact-in-about">Contact Me</button></a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
