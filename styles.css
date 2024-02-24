@@ -19,7 +19,10 @@
 
 a {
   text-decoration: none;
-  outline: transparent;
+}
+
+a:active {
+  background-color: transparent;
 }
 
 body {
