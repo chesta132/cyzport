@@ -251,12 +251,7 @@ button {
   color: var(--text-dark);
 }
 
-.action-btn {
-  display: flex;
-  gap: 1rem;
-}
-
-.action-btn button {
+.about-text button {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -333,12 +328,6 @@ button {
     padding: 0rem 1rem 0rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .action-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
 }
