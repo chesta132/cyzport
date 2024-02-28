@@ -10,7 +10,7 @@
   --more-light: #f9f9f9;
   --max-width: 1200px;
 }
- 
+
 * {
   padding: 0;
   margin: 0;
@@ -19,10 +19,12 @@
 
 a {
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
   background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -251,7 +253,7 @@ ul li a:hover {
   color: var(--text-dark);
 }
 
-.about-text button {
+.contact-in-about {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -261,9 +263,6 @@ ul li a:hover {
   border-radius: 10px;
   transition: 0.3s;
   cursor: pointer;
-}
-
-.contact-in-about {
   color: var(--primary-color-dark);
   background-color: var(--more-light);
 }
@@ -289,7 +288,7 @@ ul li a:hover {
     justify-content: center;
     gap: 3rem;
   }
-
+  
   nav #check:checked ~ ul {
     left: 0;
   }
