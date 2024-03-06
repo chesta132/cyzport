@@ -67,10 +67,12 @@ nav .logo a:hover {
 
 nav .checkbox {
   display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 nav input {
   display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 nav .checkbox i {
@@ -78,12 +80,14 @@ nav .checkbox i {
   color: var(--text-light);
   cursor: pointer;
   transition: all 0.5s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 nav .checkbox i:hover {
   font-size: 2rem;
   color: var(--primary-color);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ul {
@@ -311,7 +315,7 @@ ul li a:hover {
   margin: 0 auto;
 }
 
-.em, .ig, .wa, .x {
+.em, .ig, .fb, .x {
   padding: 5px;
   border: 2px solid var(--primary-color);
   height: 100px;
@@ -322,6 +326,7 @@ ul li a:hover {
   text-align: center;
   padding: 10px;
   color: var(--text-dark);
+  box-shadow: 0px 2px 3px rgb(0, 0, 0, 0.5);
 }
 
 .link i {
