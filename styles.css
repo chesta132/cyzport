@@ -348,18 +348,22 @@ ul li a:hover {
   
   ul {
     position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
+    width: 40%;
+    height: 38vh;
+    right: -100%;
+    top: 86.2px;
     background-color: var(--extra-light);
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
+    transition: all 0.8s;
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px rgb(0, 0, 0, 0.5);
+    opacity: 98%;
   }
   
   nav #check:checked ~ ul {
-    left: 0;
+    right: 0;
   }
 
   ul li a {
